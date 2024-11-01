@@ -28,10 +28,10 @@
     }
 
     .portfolio-button {
-      font-family: 'Helvetica Neue', sans-serif; /* Cambié la fuente */
+      font-family: 'Helvetica Neue', sans-serif;
       font-size: 1.2em;
       color: white;
-      background-color: #4CAF50; /* Cambié el color del fondo */
+      background-color: #4CAF50;
       padding: 10px 20px;
       border: none;
       border-radius: 5px;
@@ -41,7 +41,7 @@
     }
 
     .portfolio-button:hover {
-      background-color: #45a049; /* Color de fondo al pasar el cursor */
+      background-color: #45a049;
     }
 
     iframe {
@@ -50,12 +50,30 @@
       height: 450px;
       margin-bottom: 20px;
     }
+
+    .portfolio-links {
+      margin-top: 20px;
+      text-align: left;
+    }
+
+    .portfolio-links a {
+      display: block;
+      font-size: 1em;
+      color: #4CAF50;
+      text-decoration: none;
+      margin: 5px 0;
+      transition: color 0.3s;
+    }
+
+    .portfolio-links a:hover {
+      color: #45a049;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Video incrustado de YouTube -->
-  <iframe src="https://www.youtube.com/embed/1I1oXW5azYY?si=BQVopOxoyAQqkZzM" 
+  <!-- Video incrustado de YouTube con autoplay y loop -->
+  <iframe src="https://www.youtube.com/embed/1I1oXW5azYY?autoplay=1&loop=1&playlist=1I1oXW5azYY&mute=1" 
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
     allowfullscreen></iframe>
 
@@ -64,6 +82,24 @@
 
   <!-- Botón de Portafolio -->
   <a href="#portfolio" class="portfolio-button">Portafolio</a>
+
+  <!-- Opciones del portafolio con enlaces a WhatsApp -->
+  <div class="portfolio-links" id="portfolio">
+    <h2>Invierte</h2>
+    <h3>En México</h3>
+    <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20Terrenos%20de%20inversión">Terrenos de inversión</a>
+    <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20Propiedades%20en%20construcción">Propiedades en construcción</a>
+    <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20Propiedades%20pre-construcción">Propiedades pre-construcción</a>
+    <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20Desarrollos%20de%20bajo%20riesgo">Desarrollos de bajo riesgo</a>
+    <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20Pool%20de%20rentas">Pool de rentas</a>
+
+    <h3>En USA</h3>
+    <a href="https://wa.me/529993975418?text=Me%20interesa%20invertir%20en%20EB%205">EB 5</a>
+    <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20Propiedades%20para%20Airbnb">Propiedades para Airbnb</a>
+    <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20Fixer%20Upper">Fixer Upper</a>
+    
+    <p>Alta rentabilidad con potencial de crecimiento y dividendos continuos.</p>
+  </div>
 
 </body>
 </html>
