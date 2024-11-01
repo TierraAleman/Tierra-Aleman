@@ -1,108 +1,36 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tierra Alemán</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            position: relative;
-            max-width: 900px;
-        }
-        .portfolio-button {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            padding: 10px;
-            width: 200px;
-        }
-        .dropdown-menu a {
-            color: #007bff;
-            text-decoration: none;
-            display: block;
-            padding: 8px 0;
-        }
-        .dropdown-menu a:hover {
-            text-decoration: underline;
-        }
-        .embed-container {
-            position: relative;
-            width: 100%;
-            height: 0;
-            padding-top: 56.2225%;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
-        }
-        .embed-container iframe {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Incrustar Canva sin enlaces adicionales -->
-        <div class="embed-container">
-            <iframe loading="lazy" src="https://www.canva.com/design/DAGVMAJz5OQ/bruuYAsNBIr8f3F3emnZ_w/view?embed" allowfullscreen="allowfullscreen"></iframe>
-        </div>
-
-        <!-- Botón de Portafolio -->
-        <button class="portfolio-button" onclick="toggleMenu()">Portafolio</button>
-
-        <!-- Menú desplegable con enlaces de WhatsApp -->
-        <div id="dropdownMenu" class="dropdown-menu">
-            <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20terrenos%20de%20inversión">Terrenos de inversión</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20en%20construcción">Propiedades en construcción</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20pre-construcción">PROPIEDADES pre-construcción</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20desarrollos%20de%20bajo%20riesgo">Desarrollos de bajo riesgo</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20pool%20de%20rentas">Pool de rentas</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20EB5">EB 5</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20para%20Airbnb">Propiedades para Airbnb</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20fixer%20upper">Fixer Upper</a>
-        </div>
+<div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
+  <!-- Contenedor principal que simula la portada -->
+  <div style="background: #d1e7e0; padding: 30px; border-radius: 10px; width: 80%; max-width: 600px; text-align: center;">
+    <h2>TIERRA ALEMÁN</h2>
+    <p>Diseñamos modelos de inversión a la medida para todos los presupuestos, con productos que abarcan bienes raíces y agroindustria. Nuestra asesoría especializada te guiará en cada paso del proceso de inversión.</p>
+    
+    <!-- Botón de Portafolio con menú desplegable -->
+    <div style="position: relative; display: inline-block;">
+      <button onclick="toggleMenu()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Portafolio</button>
+      
+      <div id="portfolioMenu" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); border-radius: 5px; padding: 10px; width: 200px; text-align: left;">
+        <strong>INVIERTE EN MÉXICO</strong>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="https://wa.me/529993975418?text=Me%20interesan%20los%20terrenos%20de%20inversión" style="text-decoration: none; color: #007bff;">Terrenos de inversión</a></li>
+          <li><a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20en%20construcción" style="text-decoration: none; color: #007bff;">Propiedades en construcción</a></li>
+          <li><a href="https://wa.me/529993975418?text=Estoy%20interesado%20en%20PROPIEDADES%20pre-construcción" style="text-decoration: none; color: #007bff;">PROPIEDADES pre-construcción</a></li>
+          <li><a href="https://wa.me/529993975418?text=Me%20interesan%20los%20desarrollos%20de%20bajo%20riesgo" style="text-decoration: none; color: #007bff;">Desarrollos de bajo riesgo</a></li>
+          <li><a href="https://wa.me/529993975418?text=Estoy%20interesado%20en%20el%20Pool%20de%20rentas" style="text-decoration: none; color: #007bff;">Pool de rentas</a></li>
+        </ul>
+        <strong>INVIERTE EN USA</strong>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="https://wa.me/529993975418?text=Me%20interesa%20el%20EB-5" style="text-decoration: none; color: #007bff;">EB-5</a></li>
+          <li><a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20para%20Airbnb" style="text-decoration: none; color: #007bff;">Propiedades para Airbnb</a></li>
+          <li><a href="https://wa.me/529993975418?text=Estoy%20interesado%20en%20el%20Fixer%20Upper" style="text-decoration: none; color: #007bff;">Fixer Upper</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
+</div>
 
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("dropdownMenu");
-            if (menu.style.display === "block") {
-                menu.style.display = "none";
-            } else {
-                menu.style.display = "block";
-            }
-        }
-    </script>
-</body>
-</html>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("portfolioMenu");
+    menu.style.display = menu.style.display === "none" ? "block" : "none";
+  }
+</script>
