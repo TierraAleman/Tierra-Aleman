@@ -6,183 +6,123 @@
   <title>Tierra Alemán</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #99C4C0; /* Color de fondo */
+      color: #333;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f4f4f4;
-      color: #333;
+      min-height: 100vh;
     }
 
     .container {
+      width: 90%;
+      max-width: 800px;
       display: flex;
-      width: 80%;
-      max-width: 1000px;
-      background-color: #E6F0EB;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex-wrap: wrap;
+      background-color: #99C4C0; /* Color de fondo de todo el contenedor */
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
     }
 
-    .left-section {
+    .left {
       flex: 1;
       padding: 20px;
-      background-color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
     }
 
-    .left-section img {
-      max-width: 100%;
-      border-radius: 8px;
-    }
-
-    .left-section h2 {
-      font-size: 1.5em;
-      margin-top: 10px;
-      color: #333;
-    }
-
-    .left-section p {
-      color: #666;
-      margin: 10px 0 20px;
-    }
-
-    .left-section .whatsapp-button {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-    }
-
-    .right-section {
+    .right {
       flex: 1;
-      padding: 40px;
-      background-color: #CDE4DD;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: #333;
+      padding: 20px;
+      background-color: #99C4C0; /* Color de fondo */
     }
 
-    .right-section h1 {
-      font-size: 2em;
-      color: #333;
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
     }
 
-    .right-section p {
-      color: #666;
-      max-width: 400px;
-      text-align: center;
+    p {
+      font-size: 16px;
+      line-height: 1.5;
     }
 
-    .portfolio-button {
-      font-size: 1.2em;
-      color: #333;
-      background-color: #e6f0eb;
+    .button {
+      display: inline-block;
       padding: 10px 20px;
-      border: 2px solid #333;
-      border-radius: 5px;
-      cursor: pointer;
-      text-decoration: none;
-      transition: background-color 0.3s, color 0.3s;
-      position: relative;
-    }
-
-    .portfolio-button:hover {
-      background-color: #333;
-      color: #e6f0eb;
-    }
-
-    .dropdown {
-      display: none;
-      position: absolute;
-      top: 50px;
-      left: 0;
-      background-color: #f4f4f4;
-      border: 1px solid #ddd;
-      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-      border-radius: 5px;
-      z-index: 1;
-      width: 200px;
-    }
-
-    .portfolio-button:hover .dropdown {
-      display: block;
-    }
-
-    .dropdown a {
-      padding: 10px;
-      display: block;
+      margin-top: 15px;
+      font-size: 16px;
       color: #333;
+      background-color: #fff;
+      border: 1px solid #000; /* Borde negro delgado */
+      border-radius: 5px;
       text-decoration: none;
-      font-size: 0.9em;
-      transition: background-color 0.3s;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
     }
 
-    .dropdown a:hover {
-      background-color: #CDE4DD;
+    .button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 15px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #25D366;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+      margin-bottom: 20px;
     }
 
     .social-icons {
+      margin-top: 20px;
       display: flex;
       gap: 10px;
-      margin-top: 20px;
     }
 
-    .social-icons a img {
-      width: 24px;
-      height: 24px;
+    .social-icons a {
+      text-decoration: none;
+      color: #333;
+      font-size: 20px;
     }
   </style>
 </head>
 <body>
-
   <div class="container">
-    <!-- Sección izquierda con imagen y botón de WhatsApp -->
-    <div class="left-section">
-      <img src="https://example.com/tu-imagen.jpg" alt="Asesoría Personalizada">
-      <h2>Asesoría Personalizada</h2>
+    <div class="left">
+      <iframe src="https://www.youtube.com/embed/1I1oXW5azYY?autoplay=1&loop=1&playlist=1I1oXW5azYY" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      <h1>Asesoría Personalizada</h1>
       <p>¡Contáctanos ahora!</p>
-      <a href="https://wa.me/529993975418" class="whatsapp-button">WHATSAPP</a>
+      <a href="https://wa.me/9993975418" class="whatsapp-button">WHATSAPP</a>
     </div>
-
-    <!-- Sección derecha con título, descripción, botón de portafolio y redes sociales -->
-    <div class="right-section">
+    <div class="right">
       <h1>Tierra Alemán</h1>
       <p>Diseñamos modelos de inversión a la medida para todos los presupuestos, con productos que abarcan bienes raíces y agroindustria. Nuestra asesoría especializada te guiará en cada paso del proceso de inversión.</p>
-      
-      <!-- Botón de Portafolio con menú desplegable -->
-      <div class="portfolio-button">Portafolio
-        <div class="dropdown">
-          <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20terrenos%20de%20inversión">Terrenos de inversión</a>
-          <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20en%20construcción">Propiedades en construcción</a>
-          <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20pre-construcción">Propiedades pre-construcción</a>
-          <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20desarrollos%20de%20bajo%20riesgo">Desarrollos de bajo riesgo</a>
-          <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20pool%20de%20rentas">Pool de rentas</a>
-          <a href="https://wa.me/529993975418?text=Me%20interesa%20la%20inversión%20EB-5">EB 5</a>
-          <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20para%20Airbnb">Propiedades para Airbnb</a>
-          <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20de%20fixer%20upper">Fixer Upper</a>
-        </div>
-      </div>
-
-      <!-- Iconos de redes sociales -->
+      <a href="#" class="button">Portafolio</a>
       <div class="social-icons">
-        <a href="#"><img src="https://image-url-instagram.com" alt="Instagram"></a>
-        <a href="#"><img src="https://image-url-twitter.com" alt="Twitter"></a>
-        <a href="#"><img src="https://image-url-facebook.com" alt="Facebook"></a>
-        <a href="#"><img src="https://image-url-linkedin.com" alt="LinkedIn"></a>
+        <a href="https://instagram.com" target="_blank">Instagram</a>
+        <a href="https://twitter.com" target="_blank">Twitter</a>
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
       </div>
     </div>
   </div>
-
 </body>
 </html>
