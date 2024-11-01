@@ -1,36 +1,106 @@
-<div style="display: flex; justify-content: center; align-items: center; height: 100vh; font-family: Arial, sans-serif;">
-  <!-- Contenedor principal que simula la portada -->
-  <div style="background: #d1e7e0; padding: 30px; border-radius: 10px; width: 80%; max-width: 600px; text-align: center;">
-    <h2>TIERRA ALEMÁN</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tierra Alemán</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .portfolio-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .portfolio-button:hover {
+            background-color: #0056b3;
+        }
+        .options-menu {
+            display: none;
+            margin-top: 20px;
+        }
+        .options-menu a {
+            display: block;
+            color: #007bff;
+            margin: 5px 0;
+            text-decoration: none;
+        }
+        .options-menu a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Video de YouTube -->
+    <iframe src="https://www.youtube.com/embed/1I1oXW5azYY?rel=0" allowfullscreen></iframe>
+
+    <!-- Contenido de la portada -->
+    <h1>Tierra Alemán</h1>
     <p>Diseñamos modelos de inversión a la medida para todos los presupuestos, con productos que abarcan bienes raíces y agroindustria. Nuestra asesoría especializada te guiará en cada paso del proceso de inversión.</p>
     
-    <!-- Botón de Portafolio con menú desplegable -->
-    <div style="position: relative; display: inline-block;">
-      <button onclick="toggleMenu()" style="background-color: #007bff; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Portafolio</button>
-      
-      <div id="portfolioMenu" style="display: none; position: absolute; top: 100%; left: 0; background-color: white; box-shadow: 0px 8px 16px rgba(0,0,0,0.2); border-radius: 5px; padding: 10px; width: 200px; text-align: left;">
-        <strong>INVIERTE EN MÉXICO</strong>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="https://wa.me/529993975418?text=Me%20interesan%20los%20terrenos%20de%20inversión" style="text-decoration: none; color: #007bff;">Terrenos de inversión</a></li>
-          <li><a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20en%20construcción" style="text-decoration: none; color: #007bff;">Propiedades en construcción</a></li>
-          <li><a href="https://wa.me/529993975418?text=Estoy%20interesado%20en%20PROPIEDADES%20pre-construcción" style="text-decoration: none; color: #007bff;">PROPIEDADES pre-construcción</a></li>
-          <li><a href="https://wa.me/529993975418?text=Me%20interesan%20los%20desarrollos%20de%20bajo%20riesgo" style="text-decoration: none; color: #007bff;">Desarrollos de bajo riesgo</a></li>
-          <li><a href="https://wa.me/529993975418?text=Estoy%20interesado%20en%20el%20Pool%20de%20rentas" style="text-decoration: none; color: #007bff;">Pool de rentas</a></li>
-        </ul>
-        <strong>INVIERTE EN USA</strong>
-        <ul style="list-style: none; padding: 0;">
-          <li><a href="https://wa.me/529993975418?text=Me%20interesa%20el%20EB-5" style="text-decoration: none; color: #007bff;">EB-5</a></li>
-          <li><a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20para%20Airbnb" style="text-decoration: none; color: #007bff;">Propiedades para Airbnb</a></li>
-          <li><a href="https://wa.me/529993975418?text=Estoy%20interesado%20en%20el%20Fixer%20Upper" style="text-decoration: none; color: #007bff;">Fixer Upper</a></li>
-        </ul>
-      </div>
+    <!-- Botón de portafolio -->
+    <button class="portfolio-button" onclick="toggleMenu()">Portafolio</button>
+
+    <!-- Menú desplegable de opciones -->
+    <div class="options-menu" id="optionsMenu">
+        <h2>INVIRTE</h2>
+        <h3>EN MEXICO</h3>
+        <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20Terrenos%20de%20inversión">Terrenos de inversión</a>
+        <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20Propiedades%20en%20construcción">Propiedades en construcción</a>
+        <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20PROPIEDADES%20pre-construcción">PROPIEDADES pre-construcción</a>
+        <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20Desarrollos%20de%20bajo%20riesgo">Desarrollos de bajo riesgo</a>
+        <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20Pool%20de%20rentas">Pool de rentas</a>
+        
+        <h3>EN USA</h3>
+        <a href="https://wa.me/529993975418?text=Me%20interesa%20invertir%20en%20EB%205">EB 5</a>
+        <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20Propiedades%20para%20Airbnb">Propiedades para Airbnb</a>
+        <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20Fixer%20Upper">Fixer Upper</a>
+
+        <p>Alta rentabilidad con potencial de crecimiento y dividendos continuos.</p>
     </div>
-  </div>
 </div>
 
 <script>
-  function toggleMenu() {
-    const menu = document.getElementById("portfolioMenu");
-    menu.style.display = menu.style.display === "none" ? "block" : "none";
-  }
+    function toggleMenu() {
+        const menu = document.getElementById("optionsMenu");
+        menu.style.display = menu.style.display === "none" ? "block" : "none";
+    }
 </script>
+
+</body>
+</html>
