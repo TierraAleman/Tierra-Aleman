@@ -3,80 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Tierra Alemán</title>
+    <title>Tierra Alemán</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 0;
-            background-color: #f4f4f4;
+            padding: 20px;
         }
-        .portfolio-container {
-            text-align: center;
-            margin-top: 20px;
+        .container {
+            position: relative;
+            max-width: 900px;
         }
         .portfolio-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             background-color: #007bff;
             color: white;
-            padding: 10px 20px;
             border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            border-radius: 5px;
         }
         .dropdown-menu {
             display: none;
-            margin-top: 10px;
-            text-align: left;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            padding: 10px;
+            width: 200px;
         }
         .dropdown-menu a {
-            display: block;
-            padding: 5px;
-            text-decoration: none;
             color: #007bff;
+            text-decoration: none;
+            display: block;
+            padding: 8px 0;
         }
         .dropdown-menu a:hover {
-            background-color: #f0f0f0;
+            text-decoration: underline;
+        }
+        .embed-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-top: 56.2225%;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16);
+        }
+        .embed-container iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: none;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <!-- Incrustar Canva sin enlaces adicionales -->
+        <div class="embed-container">
+            <iframe loading="lazy" src="https://www.canva.com/design/DAGVMAJz5OQ/bruuYAsNBIr8f3F3emnZ_w/view?embed" allowfullscreen="allowfullscreen"></iframe>
+        </div>
 
-    <!-- Embedding Canva Design -->
-    <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
-     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-     border-radius: 8px; will-change: transform;">
-      <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;"
-        src="https://www.canva.com/design/DAGVMAJz5OQ/bruuYAsNBIr8f3F3emnZ_w/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-      </iframe>
-    </div>
-    <a href="https://www.canva.com/design/DAGVMAJz5OQ/bruuYAsNBIr8f3F3emnZ_w/view?utm_content=DAGVMAJz5OQ&utm_campaign=designshare&utm_medium=embeds&utm_source=link" target="_blank" rel="noopener">Website tierrainvest.club</a> by Gitania website 
-
-    <!-- Portfolio Button and Menu -->
-    <div class="portfolio-container">
+        <!-- Botón de Portafolio -->
         <button class="portfolio-button" onclick="toggleMenu()">Portafolio</button>
-        <div class="dropdown-menu" id="dropdownMenu">
-            <h3>INVIERTE</h3>
-            <p><strong>EN MEXICO</strong></p>
+
+        <!-- Menú desplegable con enlaces de WhatsApp -->
+        <div id="dropdownMenu" class="dropdown-menu">
             <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20terrenos%20de%20inversión">Terrenos de inversión</a>
             <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20en%20construcción">Propiedades en construcción</a>
             <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20pre-construcción">PROPIEDADES pre-construcción</a>
             <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20desarrollos%20de%20bajo%20riesgo">Desarrollos de bajo riesgo</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20Pool%20de%20rentas">Pool de rentas</a>
-            <p><strong>EN USA</strong></p>
-            <a href="https://wa.me/529993975418?text=Me%20interesa%20la%20inversión%20EB5">EB 5</a>
+            <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20pool%20de%20rentas">Pool de rentas</a>
+            <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20EB5">EB 5</a>
             <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20propiedades%20para%20Airbnb">Propiedades para Airbnb</a>
-            <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20Fixer%20Upper">Fixer Upper</a>
-            <p><em>Alta rentabilidad con potencial de crecimiento y dividendos continuos.</em></p>
+            <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20fixer%20upper">Fixer Upper</a>
         </div>
     </div>
 
     <script>
         function toggleMenu() {
-            const menu = document.getElementById('dropdownMenu');
-            menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            var menu = document.getElementById("dropdownMenu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
         }
     </script>
 </body>
