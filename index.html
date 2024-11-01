@@ -1,106 +1,69 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tierra Alemán</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-            margin: 20px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .portfolio-button {
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        .portfolio-button:hover {
-            background-color: #0056b3;
-        }
-        .options-menu {
-            display: none;
-            margin-top: 20px;
-        }
-        .options-menu a {
-            display: block;
-            color: #007bff;
-            margin: 5px 0;
-            text-decoration: none;
-        }
-        .options-menu a:hover {
-            text-decoration: underline;
-        }
-        iframe {
-            width: 100%;
-            height: 315px;
-            border: none;
-            margin-bottom: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tierra Alemán</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #333;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #666;
+      max-width: 600px;
+      margin: 20px 0;
+    }
+
+    .portfolio-button {
+      font-family: 'Helvetica Neue', sans-serif; /* Cambié la fuente */
+      font-size: 1.2em;
+      color: white;
+      background-color: #4CAF50; /* Cambié el color del fondo */
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .portfolio-button:hover {
+      background-color: #45a049; /* Color de fondo al pasar el cursor */
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
 
-<div class="container">
-    <!-- Video de YouTube -->
-    <iframe src="https://www.youtube.com/embed/1I1oXW5azYY?rel=0" allowfullscreen></iframe>
+  <!-- Video incrustado de YouTube -->
+  <iframe src="https://www.youtube.com/embed/1I1oXW5azYY?si=BQVopOxoyAQqkZzM" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
 
-    <!-- Contenido de la portada -->
-    <h1>Tierra Alemán</h1>
-    <p>Diseñamos modelos de inversión a la medida para todos los presupuestos, con productos que abarcan bienes raíces y agroindustria. Nuestra asesoría especializada te guiará en cada paso del proceso de inversión.</p>
-    
-    <!-- Botón de portafolio -->
-    <button class="portfolio-button" onclick="toggleMenu()">Portafolio</button>
+  <h1>Tierra Alemán</h1>
+  <p>Diseñamos modelos de inversión a la medida para todos los presupuestos, con productos que abarcan bienes raíces y agroindustria. Nuestra asesoría especializada te guiará en cada paso del proceso de inversión.</p>
 
-    <!-- Menú desplegable de opciones -->
-    <div class="options-menu" id="optionsMenu">
-        <h2>INVIRTE</h2>
-        <h3>EN MEXICO</h3>
-        <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20Terrenos%20de%20inversión">Terrenos de inversión</a>
-        <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20Propiedades%20en%20construcción">Propiedades en construcción</a>
-        <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20PROPIEDADES%20pre-construcción">PROPIEDADES pre-construcción</a>
-        <a href="https://wa.me/529993975418?text=Me%20interesan%20los%20Desarrollos%20de%20bajo%20riesgo">Desarrollos de bajo riesgo</a>
-        <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20Pool%20de%20rentas">Pool de rentas</a>
-        
-        <h3>EN USA</h3>
-        <a href="https://wa.me/529993975418?text=Me%20interesa%20invertir%20en%20EB%205">EB 5</a>
-        <a href="https://wa.me/529993975418?text=Me%20interesan%20las%20Propiedades%20para%20Airbnb">Propiedades para Airbnb</a>
-        <a href="https://wa.me/529993975418?text=Me%20interesa%20el%20Fixer%20Upper">Fixer Upper</a>
-
-        <p>Alta rentabilidad con potencial de crecimiento y dividendos continuos.</p>
-    </div>
-</div>
-
-<script>
-    function toggleMenu() {
-        const menu = document.getElementById("optionsMenu");
-        menu.style.display = menu.style.display === "none" ? "block" : "none";
-    }
-</script>
+  <!-- Botón de Portafolio -->
+  <a href="#portfolio" class="portfolio-button">Portafolio</a>
 
 </body>
 </html>
